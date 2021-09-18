@@ -1,0 +1,753 @@
+@font-face {
+    font-family: 'made_evolve_sansbold';
+    src: url('font/made_evolve_sans_bold_personal_use-webfont.woff2') format('woff2'),
+         url('font/made_evolve_sans_bold_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'made_evolve_sans_evobold';
+    src: url('font/made_evolve_sans_bold_evo_personal_use-webfont.woff2') format('woff2'),
+         url('font/made_evolve_sans_bold_evo_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'made_evolve_sanslight';
+    src: url('font/made_evolve_sans_light_personal_use-webfont.woff2') format('woff2'),
+         url('font/made_evolve_sans_light_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'made_evolve_sans_evolight';
+    src: url('font/made_evolve_sans_light_evo_personal_use-webfont.woff2') format('woff2'),
+         url('font/made_evolve_sans_light_evo_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'made_evolve_sansmedium';
+    src: url('font/made_evolve_sans_medium_personal_use-webfont.woff2') format('woff2'),
+         url('font/made_evolve_sans_medium_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'made_evolve_sans_evomedium';
+    src: url('font/made_evolve_sans_medium_evo_personal_use-webfont.woff2') format('woff2'),
+         url('font/made_evolve_sans_medium_evo_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'made_evolve_sansregular';
+    src: url('font/made_evolve_sans_regular_personal_use-webfont.woff2') format('woff2'),
+         url('font/made_evolve_sans_regular_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'made_evolve_sans_evoregular';
+    src: url('font/made_evolve_sans_regular_evo_personal_use-webfont.woff2') format('woff2'),
+         url('font/made_evolve_sans_regular_evo_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'made_evolve_sansthin';
+    src: url('font/made_evolve_sans_thin_personal_use-webfont.woff2') format('woff2'),
+         url('font/made_evolve_sans_thin_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'made_evolve_sans_evothin';
+    src: url('font/made_evolve_sans_thin_evo_personal_use-webfont.woff2') format('woff2'),
+         url('font/made_evolve_sans_thin_evo_personal_use-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+  background-color: #D0D76D;
+  color:black;
+  transition: color .3s, background-color .3s;
+}
+
+a#a1:link, a#a1:visited {
+  color: black;
+  padding: 15px 25px;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 20px;
+}
+
+a#a1:hover, a#a1:active {
+  background-color: #007a99;
+  border-radius: 20px;
+  color:white;
+}
+
+h1 {
+	font-size:80px;
+	text-align:center;
+	font-family:made_evolve_sans_evothin;
+	margin: 0;
+}
+
+hr {
+    border: none;
+    height: 5px;
+    color: #007a99;
+    background-color: #007a99; 
+    width:90%;
+}
+
+nav ul{
+	margin:0;
+	padding:0;
+	list-style:none;
+}
+
+nav li{
+	display: inline-block;
+	padding-top:15px;
+	padding-bottom: 15px;
+
+	position:relative;
+}
+
+nav a{
+	color:black;
+	text-decoration:none;
+	text-transform:uppercase;
+	font-family: made_evolve_sans_evoregular;
+	font-size: 25px;
+  cursor: pointer!important;
+}
+
+nav a:hover{
+	color:#007a99;
+}
+
+nav a::after{
+	content:'';
+	display:block;
+	height:5px;
+	background-color: #007a99;
+
+	position:absolute;	
+	width:0%;
+
+	transition:all ease-in-out 200ms;
+}
+
+nav a:hover::after{
+	width:100%;
+}
+
+h2 {
+	font-size:60px;
+	font-family: 'made_evolve_sans_evothin';
+	margin-bottom:0;
+	position: absolute;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+  	padding: 10px;
+
+}
+
+h3 {
+	font-size:30px;
+	font-family: 'Open Sans', sans-serif;
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+}
+
+.left {
+  position: absolute;
+  left: 10%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+}
+
+.leftext {
+  float:left; 
+  margin-left:3%;
+  margin-right:10%;
+  margin-top:0%;
+  position:relative;
+  padding: 0px; 
+}
+
+li {
+  font-family: 'Open Sans', sans-serif;
+  font-size:18px;
+}
+
+.container {
+  display: flex;
+}
+
+img {
+  margin: 6px;
+}
+
+.leftext p {
+  margin-left:1%;
+  margin-top:0%;
+  margin-right:5%;
+}
+
+.leftext h3#h31 {
+  margin-left:1%;
+  margin-right:30%;
+  margin-top:0%;
+}
+
+
+.navbar a {
+  float: left;
+  color:black;
+  text-decoration:none;
+  text-transform:uppercase;
+  font-family: made_evolve_sans_evoregular;
+  font-size: 25px;
+}
+
+.navbar a:hover{
+  color:#007a99;
+}
+
+.navbar a::after{
+  content:'';
+  display:block;
+  height:5px;
+  background-color: #007a99;
+
+  position:relative;  
+  width:0%;
+
+  transition:all ease-in-out 200ms;
+}
+
+.navbar a:hover::after{
+  width:100%;
+}
+    
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+    
+.dropdown .dropbtn {
+  font-size: 20px;  
+  border: none;
+  outline: none;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  font-family: made_evolve_sans_evoregular;
+}
+    
+.navbar a:hover, .dropdown:hover .dropbtn {
+  margin: 0px;
+  color: black; 
+}
+
+.btn a:hover, .btn:hover {
+  color:black
+}
+    
+.dropdown-content {
+  display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+    
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+    
+ 
+.dropdown:hover .dropdown-content {
+  display: block;
+  margin-top:30%;
+  background-color:#D0D76D;
+}
+
+img {
+  border-radius:10px;
+}
+
+form input {
+  font-family: made_evolve_sans_evoregular;
+  border-radius:5px;
+  padding:10px;
+  font-size:25px;
+}
+
+form label {
+  font-family: made_evolve_sans_evoregular;
+  font-size:25px;
+}
+
+form option {
+  font-family: made_evolve_sans_evoregular;
+  padding:10px;
+  font-size:15px;
+}
+
+form select {
+  font-family: made_evolve_sans_evoregular;
+  padding:10px;
+  font-size:15px;
+  border-radius:5px;
+}
+
+form textarea {
+  font-family: made_evolve_sans_evoregular;
+  border-radius:5px;
+  padding:10px;
+  font-size:25px;
+  resize:none;
+}
+
+#regular {
+   font-family:made_evolve_sansregular;
+}
+
+
+div.transbox {
+  margin: 30px;
+  background-color: white;
+  border: 1px solid black;
+  opacity: 0.8;
+  border-radius: 12px;
+}
+
+div.transbox h2 {
+  color:black;
+}
+
+div.transbox ul {
+  list-style:none;
+}
+
+div.transbox li {
+  font-family: made_evolve_sans_evoregular;
+  font-size: 25px;
+  list-style:none;
+  padding:10px;
+}
+
+div.transbox a {
+  color:black;
+}
+
+div.transbox a:visited, div.transbox a:link {
+  color: black;
+  padding: 15px 25px;
+  text-decoration: none;
+  border-radius: 20px;
+}
+
+div.transbox a:hover, div.transbox a:active {
+  background-color: black;
+  color:white;
+  border-radius:10;
+}
+
+.container2 {
+  position: relative;
+  width: 25%;
+  height:25%;
+}
+
+.image {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius:10px;
+}
+
+.overlay {
+  position: absolute;
+  top: 0%;
+  bottom: 0;
+  left: 2%;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #007a99;
+  border-radius:10px;
+}
+
+.container2:hover .overlay {
+  opacity: 0.8;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.flex-container {
+  display: flex;
+  margin-left:10%;
+}
+
+.flex-container > div {
+  margin: 10px;
+  padding: 20px;
+}
+
+.listvessel h3 {
+  text-align:center;
+}
+
+.listvessel {
+  border: 1px solid black;
+  border-radius:10px;
+  padding:0;
+  margin-left:8%;
+  margin-right:8%;
+}
+
+.listvessel a {
+  text-decoration:none;
+  color:white;
+  font-family: made_evolve_sans_evoregular;
+  font-size:30px;
+}
+
+.listvessel p {
+  text-align:center;
+  margin-right:5%;
+  margin-left:5%;
+}
+
+div.background {
+  background: url(https://i.pinimg.com/originals/aa/57/6d/aa576d6c1bb838d0d335475de2bbbe81.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background1 {
+  background: url(https://images.hdqwalls.com/download/burj-khalifa-dubai-night-hn-1920x1080.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background2 {
+  background: url(https://www.wallpapertip.com/wmimgs/44-441593_burj-al-arab.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background3 {
+  background: url(https://i.pinimg.com/originals/81/36/a3/8136a3b7f91cc2bdef9563295318221d.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background4 {
+  background: url(https://wallpapercave.com/wp/wp1864875.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background5 {
+  background: url(https://media.architecturaldigest.in/wp-content/uploads/2017/10/Louvre-Abu-Dhabi-Photography-by-Mohamed-Somji-31.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background6 {
+  background: url(https://meconstructionnews.com/wp-content/uploads/2019/08/Abu-Dhabi-Corniche-Road_1000x600.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background7 {
+  background: url(https://www.almajaz.ae/assets/images/waterfront-gallery-banner.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background8 {
+  background: url(https://media-cdn.tripadvisor.com/media/photo-s/0a/ca/cd/75/the-sharjah-center-for.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background9 {
+  background: url(https://mybayutcdn.bayut.com/mybayut/wp-content/uploads/Al-Noor-Mosque-view-8th-June-1024x640.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background10 {
+  background: url(https://upload.wikimedia.org/wikipedia/commons/8/8e/Fujairah_Fort_Side_View%2C_Fujairah%2C_UAE.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background11 {
+  background: url(https://ttnotes.com/images/fujairah-museum-fujairah-city-7.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background12 {
+  background: url(https://media-cdn.tripadvisor.com/media/photo-m/1280/1b/1a/9b/a1/grand-sheikh-zayed-mosque.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background13 {
+  background: url(https://visitrasalkhaimah.com/wp-content/uploads/2019/07/National-Museum-of-Ras-Al-Khaimah-Building.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background14 {
+  background: url(https://media-cdn.tripadvisor.com/media/photo-m/1280/16/8f/b6/d0/photo6jpg.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background15 {
+  background: url(https://i.pinimg.com/originals/2e/f1/2f/2ef12ff706644218bcadb707b21fe821.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background16 {
+  background: url(https://ajman.travel/media/1476/ajman-meuseum-inside-1700x700.jpg?anchor=center&mode=crop&width=850&height=400&rnd=131055308770000000) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background17 {
+  background: url(https://i.ytimg.com/vi/vELMVvwSjRo/maxresdefault.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background18 {
+  background: url(https://www.trawell.in/admin/images/upload/473756937Al_Zorah_Nature_reserve.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background19 {
+  background: url(https://st1031120016.files.wordpress.com/2015/03/p1018581.jpg) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background20 {
+  background: url(https://www.thenational.ae/image/policy:1.239614:1499338295/image/jpeg.jpg?f=16x9&w=1024&$p$f$w=2589da4) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.background21 {
+  background: url(https://lh3.googleusercontent.com/proxy/2bGaOHqBxZt61E7a-QKZc6sIYnm68cbEQAytH9EiM_DKMNFnRN6cKE3DckA_f7XFZxA4TwetpwDbudgNjgP30C-C5nDR085KoTlcMBl394-89iebqeqqukT1jEoxcejHfSl7dmyqKrNVtl577CAvdSY78wYQta7jbUge8P2k6JKoGRIbYBffkRmFu_tCeE9OBEkHCVDv) no-repeat;
+  border: 1px solid black;
+  border-radius: 10px;
+  background-size: 1920px 1080px;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+div.transbox {
+    padding-bottom:0%;
+}
+
+div.transbox p {
+    padding-top:10%;
+    padding-right:5%;
+    padding-left:5%;
+
+    color:black;
+    font-size:18px;
+}
+
+div.transbox ul {
+  font-family: made_evolve_sans_evoregular;
+  font-size:30px;
+  color:black;
+}
+
+div.transbox li {
+  font-family: 'Open Sans', sans-serif;
+  font-size:20px;
+  color:black;
+}

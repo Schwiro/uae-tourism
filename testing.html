@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Testing</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="testing.css" id="theme-link">
+</head>
+<body>
+
+<h1 align="center"><a href="https://u.ae/en/information-and-services/visiting-and-exploring-the-uae/travel-and-tourism" target="blank_" id="a1" title="">Testing Document</a></h1>
+
+<hr style="width:80%;">
+
+
+<div class="navbar">
+<header align="center">
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+
+                <li style="margin-left: 4%; padding:0;">
+                        <div class="dropdown">
+                            <a href="#" class="dropbtn" style="font-size:24px;">Entertainment</a>
+
+                            <div class="dropdown-content" style="padding:0;">
+                                <a href="#">Abu Dhabi</a>
+                                <a href="#">Dubai</a>
+                                <a href="#">Sharjah</a>
+                                <a href="#">Fujairah</a>
+                                <a href="#">Ras Al Khaimah</a>
+                                <a href="#">Ajman</a>
+                                <a href="#">Umm al Quwain</a>
+                            </div>
+                        </div> 
+                </li>
+
+                <li style="margin-left: 4%; padding:0;">
+                        <div class="dropdown">
+                            <a href="#" class="dropbtn" style="font-size:24px;">Landmarks</a>
+
+                            <div class="dropdown-content" style="padding:0;">
+                                <a href="#">Abu Dhabi</a>
+                                <a href="#">Dubai</a>
+                                <a href="#">Sharjah</a>
+                                <a href="#">Fujairah</a>
+                                <a href="#">Ras Al Khaimah</a>
+                                <a href="#">Ajman</a>
+                                <a href="#">Umm al Quwain</a>
+
+                            </div>
+                        </div> 
+                </li>
+
+                <li style="margin-left: 5%;font-size:24px"><a href="#">Regulations</a></li>
+                <li style="margin-left: 5%;font-size:24px"><a href="#">Culture</a></li>
+                <li style="margin-left: 5%;font-size:24px;"><a class="btn-toggle">Theme Change</a></li>
+            </ul>
+        </nav>
+</header>
+
+<hr style="width:90%;">
+
+<h2>To Test or not to Test</h2>
+
+<div class="leftext" style="margin-right:10%;margin-top:5%;">
+    <h3>Entertainment in Dubai:</h3>    
+            <ul>
+                <li>Theme Parks
+                    <ul>
+                        <li>Motiongate</li>
+                        <li>LEGOLAND</li>
+                        <li>IMG Worlds of Adventure</li>
+                    </ul>
+
+                    <p>A theme park is a type of amusement park that bases its structures and attractions around a central theme, which often features multiple areas with different themes. </p>
+                </li>
+                <li>Aquariums
+                    <ul>
+                        <li>Dubai Aquarium</li>
+                        <li>Atlantis - The Lost Chambers Aquarium</li>
+                        <li>Think Fish</li>
+                    </ul>
+
+                    <p>An aquarium is a place where fish and other animals that live in water are kept by humans. It can be a small tank, or a large building with one or more large tanks. Keeping an aquarium is a popular hobby around the world.</p>
+                </li>
+                <li>Outdoor Parks
+                    <ul>
+                        <li>Al Khazzan Park</li>
+                        <li>Al Barsha Park</li>
+                        <li>Al Ittihad Parl</li>
+                    </ul>
+
+                    <p>An outdoor park is a public open space that offers recreation for the enjoyment of the public, often offering playground sets for little children to play in and courts for specific sports, such as a tennis or basketball court.  
+                </li>
+                <li>Water Parks
+                    <ul>
+                        <li>Wild Wadi</li>
+                        <li>Atlantis Aquaventure Waterpark</li>
+                        <li>Laguna Waterparks</li>
+                    </ul>
+
+                    <p>A water park is a type of amusement park that contains several different swimming pools, usually with equipment, structures or activites for guests to enjoy, these include water slides, wave pools and more.</p>
+                </li>
+                <li>Shopping - Malls
+                    <ul>
+                        <li>Dubai Mall</li>
+                        <li>The Mall of the Emirates</li>
+                        <li>City Centre</li>
+                    </ul>
+
+                    <p>A water park is a type of amusement park that contains several different swimming pools, usually with equipment, structures or activites for guests to enjoy, these include water slides, wave pools and more.</p>
+                </li>
+            </ul>
+</div>
+
+
+
+
+<hr style="width:100%;">
+<footer>
+        <p style="float:right;margin-right:100px;">This website is designed and made by Ruikun Xu</p>
+
+        <nav>
+            <ul>
+                <li style="margin-left: 5%;"><a href="#">Resources</a></li>
+                <li style="margin-left: 5%;"><a href="#">Site Survey</a></li>
+            </ul>
+        </nav>
+
+</footer>
+
+<script> 
+const btn = document.querySelector(".btn-toggle");
+const theme = document.querySelector("#theme-link");
+
+btn.addEventListener("click", function() {
+  if (theme.getAttribute("href") == "testing.css") {
+    theme.href = "testing2.css";
+  } else {
+    theme.href = "testing.css";
+  }
+});
+</script> 
+
+
+</body>
+</html>
